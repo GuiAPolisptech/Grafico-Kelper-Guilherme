@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    
+    <div class="div">
+        <canvas id="myChart"></canvas>
+       
+    </div>
+    <script >
+     
+        let ctx =  new Chart(document.getElementById("myChart"), {
+            type: 'line',
+
+            data:{
+                
+                labels:["05:00h","06:00h","07:00h","08:00h","09:00h","10:00h","11:00h","12:00h","13:00h","14:00h","15:00h","16:00h","17:00h","18:00h"],
+                 
+                    datasets: [{
+
+                          label: '? lumens',
+                           data: [13, 15, 16, 18, 20, 21, 24, 27, 30, 27, 25, 23, 21, 18],
+                           backgroundColor: 'Green' ,
+                     
+                        }
+                       
+                        
+                    ]
+                }
+                
+                /*options:{
+                    scales:{
+                        yAxes:[
+                            {
+                             ticks:{
+                                    beginAtZero: true
+            }   
+        }
+    ]
+}
+} */
+
+})
+
+
+    
+//REFERÊNCIA TOTAL DO CÓDIGO : https://youtu.be/8pqIU-W5LCo?si=Cvn06g9uUq3sCvXU e https://youtu.be/l0K95at8BVg?si=4YV2A-NjFIcfy6IB.
+
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    
+    <div class="div">
+
+        <canvas id="myChart2"></canvas>
+    </div>
+    <script >
+     
+        let contexto = new Chart(Document.getElementById("myChart2"), {
+    type : 'line',
+
+    data: {
+        labels: ["05:00h","06:00h","07:00h","08:00h","09:00h","10:00h","11:00h","12:00h","13:00h","14:00h","15:00h","16:00h","17:00h","18:00h"],
+
+        datasets:[{
+
+            label: "Temperatura",
+            data:[13, 15, 16, 18, 20, 21, 24, 27, 30, 27, 25, 23, 21, 18],
+            backgroundColor: "red",
+        }]
+    }
+})
+
+    
+//REFERÊNCIA TOTAL DO CÓDIGO : https://youtu.be/8pqIU-W5LCo?si=Cvn06g9uUq3sCvXU e https://youtu.be/l0K95at8BVg?si=4YV2A-NjFIcfy6IB.
+
+</script>
+
+</body>
+</html>
